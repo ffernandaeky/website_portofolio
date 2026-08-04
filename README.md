@@ -23,13 +23,6 @@ The site presents selected projects, education, professional experience, and dir
 
 ## Run Locally
 
-Clone the repository:
-
-```bash
-git clone https://github.com/ffernandaeky/website_portofolio.git
-cd website_portofolio
-```
-
 Open `index.html` directly in a browser, or serve the folder locally:
 
 ```bash
@@ -54,13 +47,3 @@ Then open [http://localhost:8000](http://localhost:8000).
 ├── nav.js              # Shared navigation and theme controls
 └── styles.css          # Shared styling
 ```
-
-## Contact
-
-- Email: [ekyfernandasp@gmail.com](mailto:ekyfernandasp@gmail.com)
-- LinkedIn: [linkedin.com/in/eky-fernanda](https://www.linkedin.com/in/eky-fernanda/)
-- GitHub: [github.com/ffernandaeky](https://github.com/ffernandaeky)
-
----
-
-Built with curiosity, data, and continuous learning.
