@@ -21,16 +21,6 @@ The site presents selected projects, education, professional experience, and dir
 - JavaScript (vanilla)
 - [Tailwind CSS](https://tailwindcss.com/) via CDN
 
-## Run Locally
-
-Open `index.html` directly in a browser, or serve the folder locally:
-
-```bash
-python -m http.server 8000
-```
-
-Then open [http://localhost:8000](http://localhost:8000).
-
 ## Project Structure
 
 ```text
