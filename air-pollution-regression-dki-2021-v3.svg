@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 548" role="img" aria-labelledby="title desc">
+  <title id="title">Prediksi NO₂ dari CO</title>
+  <desc id="desc">Scatter plot merah antara karbon monoksida dan nitrogen dioksida dengan garis regresi biru.</desc>
+  <rect width="740" height="548" fill="#ffffff"/>
+  <g fill="none" stroke="#171717" stroke-width="2"><path d="M94 20V488H714"/></g>
+  <g fill="#374151" font-family="Arial, sans-serif" font-size="16" text-anchor="end">
+    <text x="82" y="426">20</text><text x="82" y="359">40</text><text x="82" y="292">60</text><text x="82" y="225">80</text><text x="82" y="158">100</text><text x="82" y="91">120</text><text x="82" y="25">140</text>
+  </g>
+  <g fill="#374151" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <text x="94" y="512">5</text><text x="165" y="512">10</text><text x="236" y="512">15</text><text x="307" y="512">20</text><text x="378" y="512">25</text><text x="449" y="512">30</text><text x="520" y="512">35</text><text x="591" y="512">40</text><text x="662" y="512">45</text>
+    <text x="404" y="540" font-size="19">co(karbon)</text>
+  </g>
+  <text x="38" y="264" transform="rotate(-90 38 264)" fill="#374151" font-family="Arial, sans-serif" font-size="19" text-anchor="middle">no2 (nitrogen)</text>
+  <path d="M120 463 L686 332" fill="none" stroke="#0c50ff" stroke-width="4"/>
+  <g fill="#ff1616" stroke="#ffffff" stroke-width=".5">
+    <circle cx="121" cy="454" r="6"/><circle cx="121" cy="441" r="6"/><circle cx="121" cy="428" r="6"/><circle cx="135" cy="448" r="6"/><circle cx="135" cy="434" r="6"/><circle cx="135" cy="421" r="6"/><circle cx="135" cy="408" r="6"/>
+    <circle cx="149" cy="441" r="6"/><circle cx="149" cy="428" r="6"/><circle cx="149" cy="414" r="6"/><circle cx="149" cy="401" r="6"/><circle cx="163" cy="434" r="6"/><circle cx="163" cy="421" r="6"/><circle cx="163" cy="408" r="6"/><circle cx="163" cy="394" r="6"/>
+    <circle cx="177" cy="428" r="6"/><circle cx="177" cy="414" r="6"/><circle cx="177" cy="401" r="6"/><circle cx="177" cy="387" r="6"/><circle cx="177" cy="374" r="6"/><circle cx="191" cy="421" r="6"/><circle cx="191" cy="408" r="6"/><circle cx="191" cy="394" r="6"/><circle cx="191" cy="381" r="6"/>
+    <circle cx="205" cy="414" r="6"/><circle cx="205" cy="401" r="6"/><circle cx="205" cy="387" r="6"/><circle cx="205" cy="374" r="6"/><circle cx="205" cy="361" r="6"/><circle cx="219" cy="414" r="6"/><circle cx="219" cy="401" r="6"/><circle cx="219" cy="381" r="6"/><circle cx="219" cy="367" r="6"/>
+    <circle cx="233" cy="408" r="6"/><circle cx="233" cy="394" r="6"/><circle cx="233" cy="381" r="6"/><circle cx="233" cy="367" r="6"/><circle cx="233" cy="354" r="6"/><circle cx="247" cy="394" r="6"/><circle cx="247" cy="381" r="6"/><circle cx="247" cy="367" r="6"/><circle cx="247" cy="347" r="6"/>
+    <circle cx="261" cy="394" r="6"/><circle cx="261" cy="374" r="6"/><circle cx="261" cy="361" r="6"/><circle cx="261" cy="347" r="6"/><circle cx="261" cy="334" r="6"/><circle cx="275" cy="381" r="6"/><circle cx="275" cy="367" r="6"/><circle cx="275" cy="354" r="6"/><circle cx="275" cy="340" r="6"/><circle cx="275" cy="320" r="6"/>
+    <circle cx="289" cy="381" r="6"/><circle cx="289" cy="361" r="6"/><circle cx="289" cy="347" r="6"/><circle cx="289" cy="327" r="6"/><circle cx="289" cy="314" r="6"/><circle cx="303" cy="367" r="6"/><circle cx="303" cy="354" r="6"/><circle cx="303" cy="340" r="6"/><circle cx="303" cy="320" r="6"/><circle cx="303" cy="307" r="6"/>
+    <circle cx="317" cy="374" r="6"/><circle cx="317" cy="354" r="6"/><circle cx="317" cy="334" r="6"/><circle cx="317" cy="314" r="6"/><circle cx="317" cy="294" r="6"/><circle cx="331" cy="361" r="6"/><circle cx="331" cy="347" r="6"/><circle cx="331" cy="327" r="6"/><circle cx="331" cy="307" r="6"/><circle cx="331" cy="280" r="6"/>
+    <circle cx="345" cy="354" r="6"/><circle cx="345" cy="334" r="6"/><circle cx="345" cy="314" r="6"/><circle cx="345" cy="294" r="6"/><circle cx="345" cy="267" r="6"/><circle cx="359" cy="340" r="6"/><circle cx="359" cy="320" r="6"/><circle cx="359" cy="300" r="6"/><circle cx="359" cy="274" r="6"/><circle cx="359" cy="247" r="6"/>
+    <circle cx="373" cy="327" r="6"/><circle cx="373" cy="307" r="6"/><circle cx="373" cy="287" r="6"/><circle cx="373" cy="260" r="6"/><circle cx="373" cy="234" r="6"/><circle cx="387" cy="334" r="6"/><circle cx="387" cy="307" r="6"/><circle cx="387" cy="280" r="6"/><circle cx="387" cy="254" r="6"/><circle cx="387" cy="220" r="6"/>
+    <circle cx="401" cy="314" r="6"/><circle cx="401" cy="294" r="6"/><circle cx="401" cy="267" r="6"/><circle cx="401" cy="240" r="6"/><circle cx="415" cy="314" r="6"/><circle cx="415" cy="287" r="6"/><circle cx="415" cy="260" r="6"/><circle cx="415" cy="227" r="6"/><circle cx="429" cy="300" r="6"/><circle cx="429" cy="274" r="6"/>
+    <circle cx="443" cy="254" r="6"/><circle cx="443" cy="220" r="6"/><circle cx="457" cy="274" r="6"/><circle cx="457" cy="247" r="6"/><circle cx="471" cy="207" r="6"/><circle cx="471" cy="194" r="6"/><circle cx="485" cy="254" r="6"/><circle cx="499" cy="247" r="6"/><circle cx="499" cy="180" r="6"/><circle cx="513" cy="207" r="6"/>
+    <circle cx="527" cy="180" r="6"/><circle cx="541" cy="160" r="6"/><circle cx="555" cy="187" r="6"/><circle cx="569" cy="120" r="6"/><circle cx="583" cy="200" r="6"/><circle cx="597" cy="167" r="6"/><circle cx="611" cy="93" r="6"/><circle cx="625" cy="220" r="6"/><circle cx="639" cy="73" r="6"/><circle cx="653" cy="33" r="6"/><circle cx="682" cy="140" r="6"/><circle cx="686" cy="73" r="6"/>
+  </g>
+</svg>

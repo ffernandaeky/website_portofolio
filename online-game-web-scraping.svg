@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dashboard analisis game online</title>
+  <desc id="desc">Visualisasi jumlah pemain aktif dan distribusi harga dari 100 game online.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071229"/><stop offset="1" stop-color="#0e2a4e"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020617" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="110" r="240" fill="#2563eb" opacity=".12"/><circle cx="120" cy="680" r="210" fill="#22d3ee" opacity=".08"/>
+  <text x="74" y="84" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">WEB SCRAPING ANALYSIS</text>
+  <text x="74" y="132" fill="#f8fafc" font-family="Arial, sans-serif" font-size="36" font-weight="700">Online Game Market Snapshot</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="177" width="680" height="444" rx="20" fill="#102646" stroke="#2c4a70"/>
+    <text x="108" y="225" fill="#dbeafe" font-family="Arial, sans-serif" font-size="21" font-weight="700">Pemain aktif teratas</text>
+    <text x="108" y="254" fill="#8fa8c6" font-family="Arial, sans-serif" font-size="15">Top 5 game berdasarkan data hasil scraping</text>
+    <g stroke="#365476" stroke-width="1"><path d="M108 330H718M108 402H718M108 474H718M108 546H718"/></g>
+    <g font-family="Arial, sans-serif" font-size="15" fill="#b8cbe2"><text x="108" y="310">Counter-Strike</text><text x="108" y="382">Dota 2</text><text x="108" y="454">Apex Legends</text><text x="108" y="526">Team Fortress 2</text><text x="108" y="598">Destiny 2</text></g>
+    <g fill="url(#bar)"><rect x="272" y="289" width="404" height="28" rx="8"/><rect x="272" y="361" width="117" height="28" rx="8"/><rect x="272" y="433" width="80" height="28" rx="8"/><rect x="272" y="505" width="30" height="28" rx="8"/><rect x="272" y="577" width="29" height="28" rx="8"/></g>
+    <g font-family="Arial, sans-serif" font-size="14" fill="#e0f2fe" font-weight="700"><text x="687" y="309">930.741</text><text x="400" y="381">269.790</text><text x="363" y="453">184.496</text><text x="313" y="525">67.588</text><text x="312" y="597">65.349</text></g>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="786" y="177" width="340" height="194" rx="20" fill="#102646" stroke="#2c4a70"/>
+    <text x="816" y="221" fill="#8fa8c6" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">TOTAL SAMPEL</text>
+    <text x="816" y="286" fill="#f8fafc" font-family="Arial, sans-serif" font-size="58" font-weight="700">100</text>
+    <text x="816" y="327" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="18">game online</text>
+    <rect x="786" y="403" width="340" height="218" rx="20" fill="#102646" stroke="#2c4a70"/>
+    <text x="816" y="447" fill="#8fa8c6" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">MODEL REGRESI</text>
+    <text x="816" y="492" fill="#dbeafe" font-family="Arial, sans-serif" font-size="20" font-weight="700">Harga → Pemain Aktif</text>
+    <path d="M819 573 C866 551 886 569 923 535 S987 503 1014 520 S1060 464 1090 456" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="819" cy="573" r="5" fill="#7dd3fc"/><circle cx="923" cy="535" r="5" fill="#7dd3fc"/><circle cx="1014" cy="520" r="5" fill="#7dd3fc"/><circle cx="1090" cy="456" r="5" fill="#7dd3fc"/>
+  </g>
+</svg>

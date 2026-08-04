@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Eky Fernanda, an Applied Data Science professional.">
+  <title>Eky Fernanda — Applied Data Science</title>
+  <link rel="icon" href="favicon.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 18px 55px rgba(15, 23, 42, .10)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260802c">
+</head>
+<body data-page="about" class="bg-white font-sans text-slate-700 antialiased dark:bg-slate-950 dark:text-slate-300">
+  <header id="site-header"></header>
+
+  <main class="min-h-screen">
+    <section id="about" class="relative isolate flex min-h-[calc(100vh-84px)] items-center overflow-hidden">
+      <div class="orb -left-24 top-28"></div>
+      <div class="orb right-0 top-0 opacity-60"></div>
+
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 py-10 lg:grid-cols-[1.3fr_.7fr] lg:py-14">
+        <div class="reveal">
+          <p id="hero-kicker" class="mb-5 text-sm font-semibold uppercase tracking-[.2em] text-blue-600">
+            AI/ML ENGINEER · DATA SCIENTIST · DATA ANALYST
+          </p>
+          <h1 id="hero-title" class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 dark:text-white sm:text-5xl">
+            Turning data into <span class="gradient-text">meaningful insights.</span>
+          </h1>
+          <div id="hero-description" class="mt-6 max-w-2xl space-y-3 text-justify text-base font-bold leading-7 sm:text-lg">
+            <p>I'm <strong>Eky Fernanda</strong>, an Applied Data Science professional who transforms data into meaningful insights and practical solutions.</p>
+          </div>
+
+          <div class="mt-6 border-l-2 border-blue-600 pl-4">
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="location">Location</p>
+            <p id="hero-location" class="mt-1 font-semibold text-slate-950 dark:text-white">
+              Surabaya, Jawa Timur, Indonesia
+            </p>
+          </div>
+
+        </div>
+
+        <div class="reveal relative mx-auto w-full max-w-[17rem] lg:max-w-xs">
+          <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-200 to-blue-50 blur-2xl dark:from-blue-950"></div>
+          <div class="relative overflow-hidden rounded-[2rem] shadow-soft">
+            <img src="photo_eky.png" alt="Eky Fernanda profile photo" class="aspect-[4/5] w-full object-cover object-top" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="to-top" class="fixed bottom-6 right-6 hidden rounded-full bg-slate-950 p-3 text-white shadow-soft dark:bg-white dark:text-slate-950" aria-label="Back to top">
+    ↑
+  </button>
+
+  <footer class="border-t border-slate-200 py-8 text-center text-sm dark:border-slate-800">
+    <span id="footer"></span>
+  </footer>
+
+  <script src="config.js?v=20260802k"></script>
+  <script src="i18n.js?v=20260802k"></script>
+  <script src="nav.js?v=20260804a"></script>
+  <script src="app.js?v=20260726e"></script>
+</body>
+</html>

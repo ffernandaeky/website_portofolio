@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Stroke Prediction Model Comparison</title>
+  <desc id="desc">A comparison of five machine learning models for stroke prediction.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071229"/><stop offset="1" stop-color="#17395d"/></linearGradient><linearGradient id="best" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <g font-family="Arial, sans-serif">
+    <text x="70" y="76" fill="#7dd3fc" font-size="18" font-weight="700" letter-spacing="4">DATA MINING PROJECT</text>
+    <text x="70" y="127" fill="#f8fafc" font-size="38" font-weight="700">Stroke Prediction: Model Comparison</text>
+    <text x="70" y="158" fill="#9cb5d0" font-size="18">Five supervised-learning models evaluated on the healthcare stroke dataset</text>
+    <rect x="70" y="205" width="1060" height="94" rx="18" fill="#102646" stroke="#31557d"/>
+    <g fill="#8fa8c6" font-size="14" font-weight="700"><text x="108" y="240">DATA SPLIT</text><text x="388" y="240">TARGET</text><text x="643" y="240">MODELS</text><text x="940" y="240">BEST ACCURACY</text></g>
+    <g fill="#f8fafc" font-size="23" font-weight="700"><text x="108" y="276">80% train / 20% test</text><text x="388" y="276">Stroke</text><text x="643" y="276">5 classifiers</text><text x="940" y="276">93.93%</text></g>
+    <path d="M352 221V282M604 221V282M904 221V282" stroke="#31557d"/>
+    <rect x="70" y="336" width="760" height="312" rx="20" fill="#102646" stroke="#31557d"/>
+    <text x="104" y="382" fill="#dbeafe" font-size="21" font-weight="700">Test-set accuracy comparison</text>
+    <path d="M135 579H785M135 431H785" stroke="#31557d"/><text x="92" y="584" fill="#8fa8c6" font-size="14">0%</text><text x="82" y="436" fill="#8fa8c6" font-size="14">100%</text>
+    <rect x="178" y="440" width="78" height="139" rx="8" fill="url(#best)"/><rect x="300" y="441" width="78" height="138" rx="8" fill="#5b8ec4"/><rect x="422" y="445" width="78" height="134" rx="8" fill="#7c6fb2"/><rect x="544" y="451" width="78" height="128" rx="8" fill="#a66c89"/><rect x="666" y="527" width="78" height="52" rx="8" fill="#ba6a5d"/>
+    <g fill="#f8fafc" font-size="16" font-weight="700"><text x="189" y="429">93.93%</text><text x="311" y="430">93.84%</text><text x="433" y="434">93.44%</text><text x="555" y="440">91.19%</text><text x="677" y="516">86.69%</text></g>
+    <g fill="#a9bdd7" font-size="13" text-anchor="middle"><text x="217" y="608">Logistic</text><text x="217" y="625">Regression</text><text x="339" y="608">Random</text><text x="339" y="625">Forest</text><text x="461" y="608">KNN</text><text x="583" y="608">Decision</text><text x="583" y="625">Tree</text><text x="705" y="608">Naive</text><text x="705" y="625">Bayes</text></g>
+    <rect x="862" y="336" width="268" height="312" rx="20" fill="#102646" stroke="#31557d"/>
+    <text x="895" y="383" fill="#dbeafe" font-size="20" font-weight="700">Workflow</text>
+    <g fill="#a9bdd7" font-size="16"><text x="895" y="430">1. Impute BMI values</text><text x="895" y="474">2. Encode categories</text><text x="895" y="518">3. Train 5 classifiers</text><text x="895" y="562">4. Evaluate accuracy</text><text x="895" y="606">5. Inspect decision tree</text></g>
+  </g>
+</svg>

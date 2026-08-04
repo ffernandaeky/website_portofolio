@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Obesity Level Classification with PyCaret</title>
+  <desc id="desc">A visual summary of an AutoML pipeline for obesity level classification.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071229"/><stop offset="1" stop-color="#17395d"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <g font-family="Arial, sans-serif">
+    <text x="70" y="76" fill="#7dd3fc" font-size="18" font-weight="700" letter-spacing="4">MACHINE LEARNING PROJECT</text>
+    <text x="70" y="127" fill="#f8fafc" font-size="38" font-weight="700">Obesity Level Classification</text>
+    <text x="70" y="158" fill="#9cb5d0" font-size="18">AutoML pipeline using PyCaret and a Streamlit prediction interface</text>
+    <rect x="70" y="205" width="1060" height="94" rx="18" fill="#102646" stroke="#31557d"/>
+    <g fill="#8fa8c6" font-size="14" font-weight="700"><text x="108" y="240">TARGET</text><text x="400" y="240">WORKFLOW</text><text x="706" y="240">MODEL SEARCH</text><text x="971" y="240">DEPLOYMENT</text></g>
+    <g fill="#f8fafc" font-size="23" font-weight="700"><text x="108" y="276">NObeyesdad</text><text x="400" y="276">PyCaret AutoML</text><text x="706" y="276">Compare + Tune</text><text x="971" y="276">Streamlit</text></g>
+    <path d="M360 221V282M666 221V282M934 221V282" stroke="#31557d"/>
+    <text x="70" y="358" fill="#dbeafe" font-size="21" font-weight="700">End-to-end classification workflow</text>
+    <g>
+      <rect x="70" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
+      <circle cx="111" cy="438" r="16" fill="#0ea5e9"/><text x="142" y="444" fill="#f8fafc" font-size="19" font-weight="700">Data preparation</text>
+      <text x="98" y="491" fill="#a9bdd7" font-size="16">• Load obesity dataset</text><text x="98" y="522" fill="#a9bdd7" font-size="16">• Impute missing values</text><text x="98" y="553" fill="#a9bdd7" font-size="16">• Define target label</text>
+      <path d="M295 484H354" stroke="#60a5fa" stroke-width="4"/><path d="M345 474l15 10-15 10" fill="#60a5fa"/>
+      <rect x="374" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
+      <circle cx="415" cy="438" r="16" fill="#6366f1"/><text x="446" y="444" fill="#f8fafc" font-size="19" font-weight="700">AutoML training</text>
+      <text x="402" y="491" fill="#a9bdd7" font-size="16">• Compare models</text><text x="402" y="522" fill="#a9bdd7" font-size="16">• Tune best model</text><text x="402" y="553" fill="#a9bdd7" font-size="16">• Finalize pipeline</text>
+      <path d="M599 484H658" stroke="#60a5fa" stroke-width="4"/><path d="M649 474l15 10-15 10" fill="#60a5fa"/>
+      <rect x="678" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
+      <circle cx="719" cy="438" r="16" fill="#22c55e"/><text x="750" y="444" fill="#f8fafc" font-size="19" font-weight="700">Saved model</text>
+      <text x="706" y="491" fill="#a9bdd7" font-size="16">• Classification pipeline</text><text x="706" y="522" fill="#a9bdd7" font-size="16">• obesity_pipeline.pkl</text><text x="706" y="553" fill="#a9bdd7" font-size="16">• Ready for inference</text>
+      <path d="M903 484H962" stroke="#60a5fa" stroke-width="4"/><path d="M953 474l15 10-15 10" fill="#60a5fa"/>
+      <rect x="982" y="393" width="148" height="182" rx="18" fill="url(#accent)"/>
+      <text x="1007" y="445" fill="#fff" font-size="19" font-weight="700">Streamlit</text><text x="1007" y="474" fill="#e0f2fe" font-size="16">Prediction</text>
+      <text x="1007" y="522" fill="#fff" font-size="15">User inputs</text><text x="1007" y="550" fill="#fff" font-size="15">→ Class label</text>
+    </g>
+    <text x="70" y="650" fill="#7f9abc" font-size="15">Classification categories: insufficient weight, normal weight, overweight, and obesity types I–III</text>
+  </g>
+</svg>
