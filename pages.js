@@ -21,13 +21,19 @@ const pageRenderers = {
     const t = window.portfolioI18n?.text ?? ((value) => value);
     const linkedIn = portfolio.social.find(([name]) => name === 'LinkedIn')?.[1];
     const github = portfolio.social.find(([name]) => name === 'GitHub')?.[1];
+    const instagram = portfolio.social.find(([name]) => name === 'Instagram')?.[1];
     const cards = [
       { name: 'Email', value: portfolio.email, hint: t('contactEmailHint'), url: `mailto:${portfolio.email}` },
       { name: 'LinkedIn', value: 'linkedin.com/in/ekyfernanda', hint: t('contactLinkedInHint'), url: linkedIn },
       { name: 'GitHub', value: 'github.com/ffernandaeky', hint: t('contactGitHubHint'), url: github },
-      { name: t('location'), icon: 'Location', value: 'Surabaya, Indonesia', hint: t('contactLocationHint') },
+      { name: 'Instagram', value: '@ffernandaeky', hint: t('contactInstagramHint'), url: instagram },
     ];
     contactLinks.innerHTML = cards.map(renderContactCard).join('');
+
+    const availabilityLocation = document.querySelector('#availability-location');
+    if (availabilityLocation) {
+      availabilityLocation.innerHTML = `${contactIcon('Location')}<span>${t('location')}</span><strong>${portfolio.location}</strong>`;
+    }
 
     const badges = ['contactInternship', 'contactFullTime', 'contactFreelance', 'contactCollaboration', 'contactResearch', 'contactOpenSource'];
     document.querySelector('#availability-badges').innerHTML = badges.map((key) => `<span class="tag">${t(key)}</span>`).join('');
@@ -88,10 +94,34 @@ function setupExperienceReveal(container) {
   sections.forEach((section) => observer.observe(section));
 }
 
+function certificateHref(position, organization = '') {
+  const certificateByPosition = {
+    'Google Data Studio': 'google-data-studio.pdf',
+    'Microsoft Power BI': 'microsoft-power-bi.pdf',
+    Tableau: 'tableau.pdf',
+    JavaScript: 'javascript.pdf',
+    'LKMM Participant': 'lkmm.pdf',
+    'Peserta LKMM': 'lkmm.pdf',
+  };
+  const certificateByOrganization = {
+    'PT PAL Indonesia': 'pt-pal-internship.pdf',
+    'HIMIT PENS 2025': 'himit-chairman.pdf',
+    'PKKMB × Technogear PENS 2024': 'technogear.pdf',
+    'Dynamic Outbound HIMIT PENS 2024': 'dynamic-outbound.pdf',
+    'KPU HIMIT PENS 2023': 'kpu-himit.pdf',
+    'HIMIT PENS 2024': 'himit-junior-staff.pdf',
+  };
+  if (organization.includes('BMKG')) return 'bmkg-internship.pdf';
+  if (organization.includes('Technogear')) return 'technogear.pdf';
+  return certificateByOrganization[organization] || certificateByPosition[position] || '';
+}
+
 function renderExperience({ period, position, organization, description, skills }) {
   const periodMarkup = period ? `<p class="experience-period">${period}</p>` : '';
   const organizationMarkup = organization ? `<p class="experience-organization">${organization}</p>` : '';
   const skillsMarkup = skills.map((skill) => `<span class="tag">${skill}</span>`).join('');
+  const certificate = certificateHref(position, organization);
+  const certificateMarkup = certificate ? `<a class="certificate-link" href="assets/certificates/${certificate}" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a>` : '';
 
   return `<article class="experience-item">
     <span class="experience-marker" aria-hidden="true"></span>
@@ -101,6 +131,7 @@ function renderExperience({ period, position, organization, description, skills 
       ${organizationMarkup}
       <p class="experience-description">${description}</p>
       <div class="mt-5 flex flex-wrap gap-2">${skillsMarkup}</div>
+      ${certificateMarkup}
     </div>
   </article>`;
 }
@@ -145,6 +176,7 @@ function contactIcon(name) {
     Email: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>',
     LinkedIn: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 3.5A1.7 1.7 0 1 1 5.2 7a1.7 1.7 0 0 1 0-3.5ZM3.7 8.3h3v12h-3v-12Zm4.9 0h2.9V10c.4-.8 1.5-2 3.6-2 3 0 4.1 1.9 4.1 5.2v7.1h-3v-6.7c0-1.6-.1-3-1.9-3-1.9 0-2.2 1.5-2.2 2.9v6.8h-3v-12Z"></path></svg>',
     GitHub: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.3-.2-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.7 9.7 0 0 1 5 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.8-4.7 5 .4.3.7.9.7 1.8V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"></path></svg>',
+    Instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.7" r=".85" fill="currentColor" stroke="none"></circle></svg>',
     Location: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>',
   };
   return icons[name] || '';

@@ -11,7 +11,7 @@ The site presents selected projects, education, professional experience, and dir
 - Light and dark theme support
 - Project showcase with detailed case-study pages
 - Education and experience timelines
-- Professional contact page with Email, LinkedIn, GitHub, location, and availability information
+- Professional contact page with Email, LinkedIn, GitHub, Instagram, location, and availability information
 - Lightweight reveal and hover interactions
 
 ## Built With

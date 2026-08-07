@@ -247,6 +247,11 @@ summary {
 .dark .contact-availability { border-color: #1e3a8a; background: linear-gradient(110deg, #0f172a, #111c3c); }
 .contact-availability-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .contact-availability .contact-section-title { margin-top: .45rem; font-size: 1.35rem; }
+.availability-location { display: inline-flex; align-items: center; gap: .4rem; margin-top: .7rem; color: #64748b; font-size: .8rem; }
+.availability-location svg { width: 1rem; height: 1rem; color: #2563eb; }
+.availability-location strong { color: #334155; font-weight: 700; }
+.dark .availability-location { color: #94a3b8; }
+.dark .availability-location strong { color: #e2e8f0; }
 .availability-status { display: inline-flex; flex: 0 0 auto; align-items: center; gap: .45rem; padding: .42rem .65rem; border: 1px solid #bfdbfe; border-radius: 999px; background: #eff6ff; color: #1d4ed8; font-size: .72rem; font-weight: 700; }
 .availability-status > span:first-child { width: .45rem; height: .45rem; border-radius: 999px; background: #22c55e; box-shadow: 0 0 0 4px #22c55e1f; }
 .dark .availability-status { border-color: #1e40af; background: #172554; color: #bfdbfe; }
@@ -286,6 +291,9 @@ summary {
 .dark .experience-organization { color: #cbd5e1; }
 .experience-description { max-width: 46rem; margin: .75rem 0 0; color: #64748b; font-size: .91rem; line-height: 1.8; }
 .dark .experience-description { color: #cbd5e1; }
+.certificate-link { display: inline-flex; align-items: center; gap: .3rem; margin-top: 1rem; color: #2563eb; font-size: .86rem; font-weight: 700; text-decoration: none; }
+.certificate-link:hover { color: #1d4ed8; text-decoration: underline; }
+.dark .certificate-link { color: #60a5fa; }
 @keyframes timeline-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 @media (prefers-reduced-motion: reduce) { .experience-reveal.is-visible { animation: none; } .experience-timeline::before { animation: none; } }
 @media (max-width: 640px) { .experience-section + .experience-section { margin-top: 3.5rem; } .experience-item { grid-template-columns: 1fr; gap: .7rem; padding-left: 1.4rem; } .experience-item:hover { transform: none; } .experience-meta { padding-top: 0; } }

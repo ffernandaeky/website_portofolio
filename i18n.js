@@ -6,7 +6,7 @@
       location: 'Location', footer: 'Built with passion.', selectedProjects: 'Selected projects', projectsHeading: 'Projects from academic and industry experience.',
       experienceHeading: 'Learning, leading, and contributing through practice.', contactHeading: "Let's Connect and Collaborate.", contactIntro: "I'm open to internship opportunities, full-time positions, collaborations, and projects related to Data Science, Data Analytics, Artificial Intelligence, and Machine Learning. Feel free to reach out through any of the platforms below.",
       contactAvailabilityLabel: 'Opportunities', contactAvailabilityTitle: 'Available Opportunities', contactCtaLabel: 'Start a conversation', contactCtaHeading: "Let's Build Something Great Together.", contactCtaDescription: "I believe great solutions are built through collaboration. Whether you have a job opportunity, research project, startup idea, or data-driven challenge, I'd be happy to connect and discuss how we can work together.",
-      contactEmailHint: 'Click to send an email', contactLinkedInHint: "Let's connect on LinkedIn", contactGitHubHint: 'Explore my projects on GitHub', contactLocationHint: 'Available for Remote & On-site', contactSendEmail: 'Send Email', contactLinkedIn: 'Connect on LinkedIn', contactGitHub: 'View GitHub', contactOpen: 'Open',
+      contactEmailHint: 'Click to send an email', contactLinkedInHint: "Let's connect on LinkedIn", contactGitHubHint: 'Explore my projects on GitHub', contactInstagramHint: 'Follow me on Instagram', contactLocationHint: 'Available for Remote & On-site', contactSendEmail: 'Send Email', contactLinkedIn: 'Connect on LinkedIn', contactGitHub: 'View GitHub', contactOpen: 'Open',
       contactInternship: 'Internship', contactFullTime: 'Full-Time', contactFreelance: 'Freelance', contactCollaboration: 'Collaboration', contactResearch: 'Research', contactOpenSource: 'Open Source',
       name: 'Name', email: 'Email', message: 'Message', yourName: 'Your name', needs: 'Tell me about your needs', send: 'Send Message →',
       educationHeading: 'A strong academic foundation for continuous growth.', graduated: 'Graduated', viewDetails: 'View details →', caseStudy: 'Case Study',
@@ -20,7 +20,7 @@
       location: 'Lokasi', footer: 'Dibuat dengan penuh semangat.', selectedProjects: 'Proyek pilihan', projectsHeading: 'Proyek dari pengalaman akademik dan industri.',
       experienceHeading: 'Belajar, memimpin, dan berkontribusi melalui praktik.', contactHeading: 'Mari Terhubung dan Berkolaborasi.', contactIntro: 'Saya terbuka untuk kesempatan magang, posisi full-time, kolaborasi, maupun proyek di bidang Data Science, Data Analytics, Artificial Intelligence, dan Machine Learning. Jangan ragu untuk menghubungi saya melalui salah satu platform di bawah ini.',
       contactAvailabilityLabel: 'Peluang', contactAvailabilityTitle: 'Terbuka untuk', contactCtaLabel: 'Mulai percakapan', contactCtaHeading: 'Mari Wujudkan Ide Bersama.', contactCtaDescription: 'Saya percaya bahwa solusi terbaik lahir dari kolaborasi. Jika Anda memiliki peluang kerja, proyek, penelitian, maupun ide yang ingin dikembangkan bersama, saya akan sangat senang untuk berdiskusi dan berkolaborasi.',
-      contactEmailHint: 'Klik untuk mengirim email', contactLinkedInHint: 'Mari terhubung di LinkedIn', contactGitHubHint: 'Lihat project saya di GitHub', contactLocationHint: 'Tersedia untuk Remote & On-site', contactSendEmail: 'Kirim Email', contactLinkedIn: 'Hubungi di LinkedIn', contactGitHub: 'Lihat GitHub', contactOpen: 'Tersedia',
+      contactEmailHint: 'Klik untuk mengirim email', contactLinkedInHint: 'Mari terhubung di LinkedIn', contactGitHubHint: 'Lihat project saya di GitHub', contactInstagramHint: 'Ikuti saya di Instagram', contactLocationHint: 'Tersedia untuk Remote & On-site', contactSendEmail: 'Kirim Email', contactLinkedIn: 'Hubungi di LinkedIn', contactGitHub: 'Lihat GitHub', contactOpen: 'Tersedia',
       contactInternship: 'Magang', contactFullTime: 'Full-Time', contactFreelance: 'Freelance', contactCollaboration: 'Kolaborasi', contactResearch: 'Riset', contactOpenSource: 'Open Source',
       name: 'Nama', email: 'Email', message: 'Pesan', yourName: 'Nama Anda', needs: 'Ceritakan kebutuhan Anda', send: 'Kirim Pesan →',
       educationHeading: 'Fondasi akademik yang kuat untuk terus berkembang.', graduated: 'Lulus', viewDetails: 'Lihat detail →', caseStudy: 'Studi Kasus',
@@ -246,6 +246,17 @@
 
   const language = () => localStorage.getItem(languageKey) || 'en';
   const text = (key) => messages[language()][key] || messages.en[key] || key;
+  function certificateHref(position, organization = '') {
+    const certificateByPosition = {
+      'Google Data Studio': 'google-data-studio.pdf', 'Microsoft Power BI': 'microsoft-power-bi.pdf', Tableau: 'tableau.pdf', JavaScript: 'javascript.pdf', 'LKMM Participant': 'lkmm.pdf', 'Peserta LKMM': 'lkmm.pdf',
+    };
+    const certificateByOrganization = {
+      'PT PAL Indonesia': 'pt-pal-internship.pdf', 'HIMIT PENS 2025': 'himit-chairman.pdf', 'PKKMB × Technogear PENS 2024': 'technogear.pdf', 'Dynamic Outbound HIMIT PENS 2024': 'dynamic-outbound.pdf', 'KPU HIMIT PENS 2023': 'kpu-himit.pdf', 'HIMIT PENS 2024': 'himit-junior-staff.pdf',
+    };
+    if (organization.includes('BMKG')) return 'bmkg-internship.pdf';
+    if (organization.includes('Technogear')) return 'technogear.pdf';
+    return certificateByOrganization[organization] || certificateByPosition[position] || '';
+  }
   function renderExperienceContent() {
     const container = document.querySelector('#experience-list');
     if (!container || document.body.dataset.page !== 'experience') return;
@@ -260,6 +271,7 @@
           ${organization ? `<p class="experience-organization">${organization}</p>` : ''}
           <p class="experience-description">${description}</p>
           <div class="mt-5 flex flex-wrap gap-2">${skills.map((skill) => `<span class="tag">${skill}</span>`).join('')}</div>
+          ${certificateHref(position, organization) ? `<a class="certificate-link" href="assets/certificates/${certificateHref(position, organization)}" target="_blank" rel="noopener noreferrer">Lihat sertifikat <span aria-hidden="true">↗</span></a>` : ''}
         </div>
       </article>`).join('')}</div>
     </section>`).join('');

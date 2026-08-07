@@ -20,6 +20,7 @@ const portfolio = {
   social: [
     ['LinkedIn', 'https://www.linkedin.com/in/eky-fernanda/'],
     ['GitHub', 'https://github.com/ffernandaeky'],
+    ['Instagram', 'https://www.instagram.com/ffernandaeky'],
     ['Email', 'mailto:ekyfernandasp@gmail.com'],
   ],
 
