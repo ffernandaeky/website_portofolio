@@ -47,7 +47,7 @@ const pageRenderers = {
     const projectId = new URLSearchParams(location.search).get('id');
     const project = portfolio.projects.find(({ id }) => id === projectId) ?? portfolio.projects[0];
 
-    document.title = `${project.title} — Case Study`;
+    document.title = `${project.title}: Case Study`;
     document.querySelector('#year').textContent = portfolio.year;
     caseStudy.innerHTML = renderCaseStudy(project);
   },
@@ -243,7 +243,6 @@ function renderAirPollutionCaseStudy(project) {
           <div><dt>${t('tools')}</dt><dd>Python</dd></div>
           <div><dt>${t('model')}</dt><dd>${project.model ?? 'Linear Regression'}</dd></div>
         </dl>
-        <div class="case-divider"></div>
         <p class="case-sidebar-label">${t('technology')}</p>
         <div class="case-tags">${tags}</div>
       </aside>

@@ -270,13 +270,10 @@ summary {
 .experience-section { position: relative; }
 .experience-section + .experience-section { margin-top: 4.75rem; padding-top: .25rem; }
 .experience-section-title { display: flex; align-items: center; gap: .9rem; }
-.experience-section-title::after { content: ''; width: 3.25rem; height: 1px; background: linear-gradient(90deg, #2563eb, transparent); }
 .experience-reveal.is-visible { animation: rise .55s ease both; }
 .experience-section-title { margin: 0 0 1.75rem; color: #0f172a; font-size: 1.25rem; font-weight: 800; letter-spacing: -.025em; }
 .dark .experience-section-title { color: #f8fafc; }
 .experience-timeline { position: relative; }
-.experience-timeline::before { content: ''; position: absolute; top: .45rem; bottom: .45rem; left: .36rem; width: 1px; background: linear-gradient(#bfdbfe, #dbeafe); transform-origin: top; animation: timeline-grow .85s ease-out both; }
-.dark .experience-timeline::before { background: #1e3a8a; }
 .experience-item { position: relative; display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 1.5rem; padding: 0 1rem 2.65rem 1.45rem; border-radius: .9rem; transition: background-color .22s ease, transform .22s ease; }
 .experience-item:last-child { padding-bottom: 0; }
 .experience-item:hover { background: #f8fafc; transform: translateX(4px); }
@@ -294,8 +291,7 @@ summary {
 .certificate-link { display: inline-flex; align-items: center; gap: .3rem; margin-top: 1rem; color: #2563eb; font-size: .86rem; font-weight: 700; text-decoration: none; }
 .certificate-link:hover { color: #1d4ed8; text-decoration: underline; }
 .dark .certificate-link { color: #60a5fa; }
-@keyframes timeline-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-@media (prefers-reduced-motion: reduce) { .experience-reveal.is-visible { animation: none; } .experience-timeline::before { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .experience-reveal.is-visible { animation: none; } }
 @media (max-width: 640px) { .experience-section + .experience-section { margin-top: 3.5rem; } .experience-item { grid-template-columns: 1fr; gap: .7rem; padding-left: 1.4rem; } .experience-item:hover { transform: none; } .experience-meta { padding-top: 0; } }
 
 /* Air pollution case study */
@@ -306,7 +302,6 @@ summary {
 }
 
 .case-header {
-  border-bottom: 1px solid rgba(148, 163, 184, .16);
   background: rgba(8, 15, 33, .88);
   backdrop-filter: blur(18px);
 }
@@ -325,25 +320,24 @@ summary {
 .case-hero-copy > .case-tags { margin-top: 27px; }
 .case-tag { padding: 7px 11px; border: 1px solid rgba(117, 154, 214, .27); border-radius: 999px; background: rgba(48, 84, 149, .18); color: #c4d9ff; font-size: .74rem; font-weight: 700; }
 .case-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 45px; }
-.case-facts div { min-width: 0; padding-top: 15px; border-top: 1px solid rgba(148, 163, 184, .25); }
+.case-facts div { min-width: 0; }
 .case-facts span, .case-facts small { display: block; color: #7f90ad; font-size: .66rem; font-weight: 700; letter-spacing: .08em; }
 .case-facts strong { display: block; overflow: hidden; margin: 7px 0 4px; color: #f8fbff; font-size: .88rem; text-overflow: ellipsis; white-space: nowrap; }
 .case-facts small { font-weight: 500; letter-spacing: 0; }
 .case-chart { margin: 0; overflow: hidden; border: 1px solid rgba(148, 163, 184, .22); border-radius: 22px; background: #fff; box-shadow: 0 25px 65px rgba(0, 0, 0, .28); }
 .case-chart img { display: block; width: 100%; height: auto; background: #fff; }
-.case-chart figcaption { padding: 14px 18px; border-top: 1px solid #e2e8f0; color: #64748b; font-size: .76rem; line-height: 1.45; }
+.case-chart figcaption { padding: 14px 18px; color: #64748b; font-size: .76rem; line-height: 1.45; }
 .case-chart figcaption span { margin-right: 9px; color: #1d4ed8; font-weight: 800; text-transform: uppercase; }
 .case-content { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(44px, 9vw, 124px); margin-top: 110px; }
 .case-sidebar { align-self: start; position: sticky; top: 32px; padding: 23px; border: 1px solid rgba(148, 163, 184, .16); border-radius: 16px; background: rgba(15, 29, 58, .48); }
 .case-sidebar > p { margin: 0; color: #eff6ff; font-size: .77rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .case-sidebar dl { margin: 21px 0 0; }
-.case-sidebar dl div { padding: 13px 0; border-bottom: 1px solid rgba(148, 163, 184, .14); }
+.case-sidebar dl div { padding: 13px 0; }
 .case-sidebar dt { margin-bottom: 4px; color: #8090ab; font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .case-sidebar dd { margin: 0; color: #dce8fb; font-size: .85rem; font-weight: 600; }
-.case-divider { height: 1px; margin: 20px 0; background: rgba(148, 163, 184, .18); }
 .case-sidebar .case-sidebar-label { margin-bottom: 12px; color: #8090ab; font-size: .68rem; }
 .case-article { min-width: 0; }
-.case-section { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 22px; padding: 0 0 48px; margin-bottom: 48px; border-bottom: 1px solid rgba(148, 163, 184, .16); }
+.case-section { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 22px; padding: 0; margin-bottom: 48px; }
 .case-section-number { padding-top: 8px; color: #4f8cff; font-size: .8rem; font-weight: 800; }
 .case-section h2, .case-conclusion h2 { margin: 0; color: #fff; font-size: clamp(1.45rem, 2.2vw, 2rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.15; }
 .case-section p, .case-conclusion > p:last-child { max-width: 680px; margin: 16px 0 0; color: #adbbd0; font-size: 1rem; line-height: 1.9; }
@@ -361,7 +355,7 @@ summary {
 .case-conclusion::after { content: ''; position: absolute; right: -100px; bottom: -140px; width: 310px; height: 310px; border-radius: 50%; background: rgba(59, 130, 246, .15); filter: blur(16px); }
 .case-conclusion > * { position: relative; z-index: 1; }
 .case-conclusion h2 { max-width: 660px; margin-top: 20px; font-size: clamp(1.7rem, 2.8vw, 2.45rem); }
-.case-footer { padding: 28px; border-top: 1px solid rgba(148, 163, 184, .16); color: #7f90ad; font-size: .83rem; text-align: center; }
+.case-footer { padding: 28px; color: #7f90ad; font-size: .83rem; text-align: center; }
 
 /* The case study keeps its layout but follows the shared light/dark setting. */
 html:not(.dark) .case-page { background: #fff; color: #475569; }
@@ -375,9 +369,6 @@ html:not(.dark) .case-gallery > div > p,
 html:not(.dark) .case-conclusion > p:last-child { color: #475569; }
 html:not(.dark) .case-tag { border-color: #bfdbfe; background: #eff6ff; color: #1d4ed8; }
 html:not(.dark) .case-kicker { color: #2563eb; }
-html:not(.dark) .case-facts div,
-html:not(.dark) .case-section,
-html:not(.dark) .case-footer { border-color: #e2e8f0; }
 html:not(.dark) .case-facts span,
 html:not(.dark) .case-facts small,
 html:not(.dark) .case-sidebar dt,
@@ -390,8 +381,6 @@ html:not(.dark) .case-sidebar { border-color: #e2e8f0; background: #f8fafc; }
 html:not(.dark) .case-gallery figure { border-color: #e2e8f0; background: #f8fafc; }
 html:not(.dark) .case-gallery figcaption strong { color: #0f172a; }
 html:not(.dark) .case-gallery figcaption span { color: #64748b; }
-html:not(.dark) .case-sidebar dl div,
-html:not(.dark) .case-divider { border-color: #e2e8f0; background-color: #e2e8f0; }
 html:not(.dark) .case-conclusion { border-color: #bfdbfe; background: linear-gradient(135deg, #dbeafe, #f8fafc); }
 
 @media (max-width: 900px) {
@@ -400,7 +389,7 @@ html:not(.dark) .case-conclusion { border-color: #bfdbfe; background: linear-gra
   .case-chart { max-width: 720px; }
   .case-content { grid-template-columns: 1fr; gap: 42px; margin-top: 72px; }
   .case-sidebar { position: static; display: grid; grid-template-columns: 1fr 1.6fr; gap: 0 30px; }
-  .case-sidebar > p, .case-sidebar .case-divider { display: none; }
+  .case-sidebar > p { display: none; }
   .case-sidebar dl { display: flex; gap: 24px; margin: 0; }
   .case-sidebar dl div { padding: 0; border: 0; }
   .case-sidebar .case-sidebar-label { align-self: center; margin: 0 0 10px; }
