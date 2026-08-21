@@ -97,11 +97,11 @@ function setupExperienceReveal(container) {
 function certificateHref(position, organization = '') {
   const certificateByPosition = {
     'Google Data Studio': 'google-data-studio.pdf',
-    'Microsoft Power BI': 'microsoft-power-bi.pdf',
+    'Microsoft Power BI': 'microsoft-power-bi-certificate.pdf',
     Tableau: 'tableau.pdf',
     JavaScript: 'javascript.pdf',
-    'LKMM Participant': 'lkmm.pdf',
-    'Peserta LKMM': 'lkmm.pdf',
+    'LKMM Participant': 'lkmm-pra-td.pdf',
+    'Peserta LKMM': 'lkmm-pra-td.pdf',
   };
   const certificateByOrganization = {
     'PT PAL Indonesia': 'pt-pal-internship.pdf',
@@ -121,7 +121,7 @@ function renderExperience({ period, position, organization, description, skills 
   const organizationMarkup = organization ? `<p class="experience-organization">${organization}</p>` : '';
   const skillsMarkup = skills.map((skill) => `<span class="tag">${skill}</span>`).join('');
   const certificate = certificateHref(position, organization);
-  const certificateMarkup = certificate ? `<a class="certificate-link" href="assets/certificates/${certificate}" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a>` : '';
+  const certificateMarkup = certificate ? `<a class="certificate-link" href="certificate.html?v=20260821e&file=${encodeURIComponent(certificate)}">View certificate <span aria-hidden="true">→</span></a>` : '';
 
   return `<article class="experience-item">
     <span class="experience-marker" aria-hidden="true"></span>
@@ -231,7 +231,7 @@ function renderAirPollutionCaseStudy(project) {
       </div>
       <figure class="case-chart">
         <img src="${project.image}" alt="${project.visualAlt ?? 'Scatter plot CO dan NO₂ di DKI Jakarta pada 2021 dengan garis regresi linear'}">
-        <figcaption><span>Gambar 01</span> ${project.visualCaption ?? 'Sebaran observasi CO dan NO₂ dengan garis regresi linear.'}</figcaption>
+        <figcaption>${project.visualCaption ?? 'Sebaran observasi CO dan NO₂ dengan garis regresi linear.'}</figcaption>
       </figure>
     </section>
 

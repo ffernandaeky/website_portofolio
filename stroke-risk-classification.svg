@@ -26,6 +26,6 @@
     <rect x="882" y="414" width="205" height="164" rx="14" fill="#0b1d37" stroke="#31557d"/>
     <path d="M907 538C935 516 949 491 975 495S1019 458 1058 441" fill="none" stroke="#38bdf8" stroke-width="5"/><path d="M907 550H1060M907 430V550" stroke="#31557d" stroke-width="2"/>
     <text x="907" y="610" fill="#8fa8c6" font-size="14">Age vs. average glucose</text>
-    <text x="70" y="680" fill="#7f9abc" font-size="15">Educational project only — model output should not be used as a medical diagnosis.</text>
+    <text x="70" y="680" fill="#7f9abc" font-size="15">Educational project only. Model output should not be used as a medical diagnosis.</text>
   </g>
 </svg>

@@ -32,6 +32,6 @@
       <text x="1007" y="445" fill="#fff" font-size="19" font-weight="700">Streamlit</text><text x="1007" y="474" fill="#e0f2fe" font-size="16">Prediction</text>
       <text x="1007" y="522" fill="#fff" font-size="15">User inputs</text><text x="1007" y="550" fill="#fff" font-size="15">→ Class label</text>
     </g>
-    <text x="70" y="650" fill="#7f9abc" font-size="15">Classification categories: insufficient weight, normal weight, overweight, and obesity types I–III</text>
+    <text x="70" y="650" fill="#7f9abc" font-size="15">Classification categories: insufficient weight, normal weight, overweight, and obesity types I to III</text>
   </g>
 </svg>

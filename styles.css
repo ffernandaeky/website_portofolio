@@ -291,8 +291,16 @@ summary {
 .certificate-link { display: inline-flex; align-items: center; gap: .3rem; margin-top: 1rem; color: #2563eb; font-size: .86rem; font-weight: 700; text-decoration: none; }
 .certificate-link:hover { color: #1d4ed8; text-decoration: underline; }
 .dark .certificate-link { color: #60a5fa; }
+.certificate-viewer { width: 100%; max-width: 58rem; margin-inline: auto; overflow: hidden; border: 1px solid #e2e8f0; border-radius: 1rem; background: #f8fafc; box-shadow: 0 18px 55px rgba(15, 23, 42, .10); }
+.certificate-image { display: block; width: 100%; height: auto; background: #fff; }
+.certificate-canvas { display: block; width: 100%; height: auto; background: #fff; }
+.certificate-canvas + .certificate-canvas { border-top: 1px solid #e2e8f0; }
+.certificate-error { margin: 0; padding: 2rem; color: #64748b; }
+.dark .certificate-viewer { border-color: #1e293b; background: #0f172a; }
+.dark .certificate-canvas + .certificate-canvas { border-color: #334155; }
+.dark .certificate-error { color: #cbd5e1; }
 @media (prefers-reduced-motion: reduce) { .experience-reveal.is-visible { animation: none; } }
-@media (max-width: 640px) { .experience-section + .experience-section { margin-top: 3.5rem; } .experience-item { grid-template-columns: 1fr; gap: .7rem; padding-left: 1.4rem; } .experience-item:hover { transform: none; } .experience-meta { padding-top: 0; } }
+@media (max-width: 640px) { .experience-section + .experience-section { margin-top: 3.5rem; } .experience-item { grid-template-columns: 1fr; gap: .7rem; padding-left: 1.4rem; } .experience-item:hover { transform: none; } .experience-meta { padding-top: 0; } .certificate-viewer { max-width: none; border-radius: .75rem; } }
 
 /* Air pollution case study */
 .case-page {
@@ -327,7 +335,6 @@ summary {
 .case-chart { margin: 0; overflow: hidden; border: 1px solid rgba(148, 163, 184, .22); border-radius: 22px; background: #fff; box-shadow: 0 25px 65px rgba(0, 0, 0, .28); }
 .case-chart img { display: block; width: 100%; height: auto; background: #fff; }
 .case-chart figcaption { padding: 14px 18px; color: #64748b; font-size: .76rem; line-height: 1.45; }
-.case-chart figcaption span { margin-right: 9px; color: #1d4ed8; font-weight: 800; text-transform: uppercase; }
 .case-content { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(44px, 9vw, 124px); margin-top: 110px; }
 .case-sidebar { align-self: start; position: sticky; top: 32px; padding: 23px; border: 1px solid rgba(148, 163, 184, .16); border-radius: 16px; background: rgba(15, 29, 58, .48); }
 .case-sidebar > p { margin: 0; color: #eff6ff; font-size: .77rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
