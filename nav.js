@@ -13,6 +13,16 @@
     ['contact', 'contact', 'contact.html'],
   ];
 
+  function cvDownload() {
+    const filename = i18n.language() === 'id'
+      ? 'CV ATS_Eky Fernanda Bhs_Indo.pdf'
+      : 'CV ATS_Eky Fernanda Bhs_Ing.pdf';
+    return {
+      filename,
+      href: `assets/cv/${encodeURIComponent(filename)}`,
+    };
+  }
+
   function currentSection() {
     const page = document.body.dataset.page;
     if (page === 'caseStudy') return 'projects';
@@ -29,6 +39,7 @@
     const mount = document.querySelector('#site-header');
     if (!mount) return;
 
+    const cv = cvDownload();
     const desktopLinks = navigation.map(([section, label, href]) => linkMarkup(section, label, href)).join('');
     const mobileLinks = navigation.map(([section, label, href]) => linkMarkup(section, label, href, true)).join('');
 
@@ -37,7 +48,7 @@
       <nav class="mx-auto flex max-w-7xl items-center justify-end px-6 py-5">
         <div class="hidden items-center gap-7 text-sm font-medium md:flex">
           ${desktopLinks}
-          <a href="CV-ATS-Eky-Fernanda.pdf" download class="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">${i18n.text('cv')}</a>
+          <a href="${cv.href}" download="${cv.filename}" class="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">${i18n.text('cv')}</a>
           <div class="inline-flex overflow-hidden rounded-lg border border-slate-200 text-xs font-semibold dark:border-slate-700" aria-label="${i18n.text('language')}">
             <button type="button" data-language="en" class="language-button px-2.5 py-2" aria-label="English">EN</button>
             <button type="button" data-language="id" class="language-button border-l border-slate-200 px-2.5 py-2 dark:border-slate-700" aria-label="Bahasa Indonesia">ID</button>
@@ -55,7 +66,7 @@
       <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-6 py-5 dark:border-slate-800 dark:bg-slate-950 md:hidden">
         <div class="flex flex-col gap-4">
           ${mobileLinks}
-          <a class="font-semibold text-blue-600" href="CV-ATS-Eky-Fernanda.pdf" download>${i18n.text('cv')}</a>
+          <a class="font-semibold text-blue-600" href="${cv.href}" download="${cv.filename}">${i18n.text('cv')}</a>
           <button id="mobile-theme" class="w-fit rounded-full border border-slate-200 p-2 dark:border-slate-700" aria-label="Change theme"></button>
         </div>
       </div>`;
@@ -98,6 +109,11 @@
   }
 
   renderNavbar();
+  const cv = cvDownload();
+  document.querySelectorAll('[data-cv-download]').forEach((link) => {
+    link.href = cv.href;
+    link.download = cv.filename;
+  });
   document.querySelectorAll('[data-language]').forEach((button) => {
     const active = button.dataset.language === i18n.language();
     button.classList.toggle('bg-blue-600', active);

@@ -17,11 +17,11 @@
     <text x="70" y="358" fill="#dbeafe" font-size="21" font-weight="700">End-to-end classification workflow</text>
     <g>
       <rect x="70" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
-      <circle cx="111" cy="438" r="16" fill="#0ea5e9"/><text x="142" y="444" fill="#f8fafc" font-size="19" font-weight="700">Data preparation</text>
+      <circle cx="111" cy="438" r="16" fill="#0ea5e9"/><text x="142" y="444" fill="#f8fafc" font-size="16" font-weight="700">Data preparation</text>
       <text x="98" y="491" fill="#a9bdd7" font-size="16">• Load obesity dataset</text><text x="98" y="522" fill="#a9bdd7" font-size="16">• Impute missing values</text><text x="98" y="553" fill="#a9bdd7" font-size="16">• Define target label</text>
       <path d="M295 484H354" stroke="#60a5fa" stroke-width="4"/><path d="M345 474l15 10-15 10" fill="#60a5fa"/>
       <rect x="374" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
-      <circle cx="415" cy="438" r="16" fill="#6366f1"/><text x="446" y="444" fill="#f8fafc" font-size="19" font-weight="700">AutoML training</text>
+      <circle cx="415" cy="438" r="16" fill="#6366f1"/><text x="446" y="444" fill="#f8fafc" font-size="16" font-weight="700">AutoML training</text>
       <text x="402" y="491" fill="#a9bdd7" font-size="16">• Compare models</text><text x="402" y="522" fill="#a9bdd7" font-size="16">• Tune best model</text><text x="402" y="553" fill="#a9bdd7" font-size="16">• Finalize pipeline</text>
       <path d="M599 484H658" stroke="#60a5fa" stroke-width="4"/><path d="M649 474l15 10-15 10" fill="#60a5fa"/>
       <rect x="678" y="393" width="206" height="182" rx="18" fill="#102646" stroke="#31557d"/>
