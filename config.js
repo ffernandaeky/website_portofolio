@@ -34,6 +34,31 @@ const portfolio = {
 
   projects: [
     {
+      id: 'pasar-keputran-utara-data-reconciliation',
+      title: 'Pasar Keputran Utara Market Data Reconciliation',
+      desc: 'Reconciled market data for Pasar Keputran Utara and used exploratory analysis to review data completeness and identify records requiring verification before the field survey.',
+      image: 'assets/pasar-keputran-utara-eda.png?v=20260930a',
+      tags: ['Excel', 'Python', 'Data Reconciliation', 'Exploratory Data Analysis'],
+      metric: 'Professional Experience · PT Pasar Surya (Perseroda)',
+      problem: 'Market records from multiple sources needed to be checked for consistency and completeness so records requiring verification could be identified before the survey.',
+      dataset: 'Market data for Pasar Keputran Utara, including stand activity, stand type and group, administrative conditions, and enforcement status, as shown in the project summary.',
+      method: 'Used Excel and Python to reconcile records across data sources, check data consistency, and perform exploratory data analysis (EDA) focused on completeness and potential issues for follow-up verification.',
+      process: 'Consolidate source records → match and reconcile data → inspect completeness and data quality → summarize findings in charts → identify information requiring verification before the survey.',
+      result: 'Prepared a visual summary of market data and highlighted completeness and verification needs to support survey preparation.',
+      tech: 'Microsoft Excel, Python',
+      challenge: 'Keeping records consistent across multiple sources while distinguishing incomplete information from records that require follow-up verification.',
+      lesson: 'Data reconciliation and exploratory analysis help surface inconsistencies and missing information early, giving the survey team a clearer basis for field verification.',
+      role: 'Research and Development Intern',
+      caseLayout: 'dashboard',
+      caseFacts: [
+        ['LOKASI', 'Pasar Keputran Utara', 'Surabaya'],
+        ['TOOLS', 'Excel & Python', 'Rekonsiliasi dan EDA'],
+        ['TUJUAN', 'Data completeness', 'Persiapan verifikasi survey'],
+      ],
+      visualAlt: 'EDA dashboard summary for Pasar Keputran Utara market data',
+      visualCaption: 'Exploratory data analysis summary used to review market data completeness and identify information for verification before the survey.',
+    },
+    {
       id: 'dashboard-tantangan-kerja-2022',
       title: 'Indonesia Employment Challenges Dashboard 2022',
       desc: 'A Power BI dashboard that maps employment challenges across Indonesian cities and regencies through TPT and TPAK clustering.',
@@ -450,8 +475,9 @@ const portfolio = {
     {
       section: 'Professional Experience',
       items: [
+        { period: 'Sep 2026 to Present', position: 'Research and Development Intern', organization: 'PT Pasar Surya (Perseroda)', description: 'Selected to participate in the MagangHub internship program by the Ministry of Manpower of the Republic of Indonesia (Kemnaker RI) at PT Pasar Surya (Perseroda). Perform data reconciliation across multiple data sources to identify discrepancies, validate records, and support data consistency between marketing and market unit datasets. Clean, consolidate, and structure market data using Google Sheets, applying data matching, lookup, query, and validation techniques to support reconciliation activities. Conduct exploratory data analysis (EDA) to identify missing values, anomalies, patterns, and data quality issues, supporting further analysis and reporting activities.', skills: ['Data Reconciliation', 'Data Cleaning', 'Google Sheets', 'Data Validation', 'Exploratory Data Analysis', 'Data Quality'] },
         { period: 'Jan 2025 to May 2025', position: 'Data Analyst Intern', organization: 'PT PAL Indonesia', description: 'Developed near real time monitoring dashboards to visualize machine performance and operational data using Grafana and Apache ECharts. Partnered with engineers to analyze production data from ECW Cranes, Fanuc machines, and Ingersoll Rand compressors, transforming raw operational information into interactive dashboards. The work improved data accessibility and helped engineers monitor equipment performance more efficiently.', skills: ['Grafana', 'Apache ECharts', 'Dashboard Development', 'Industrial Data Analysis', 'Data Visualization', 'SQL'] },
-        { period: 'Aug 2025 to Nov 2025', position: 'Data Science Intern', organization: 'BMKG, Stasiun Meteorologi Maritim Tanjung Perak Surabaya', description: 'Assisted in collecting, processing, and analyzing meteorological data to support daily weather observation and reporting activities. Worked with environmental datasets to identify trends, organize weather information, and contribute to operational reports used by the meteorological team. This internship strengthened analytical thinking, data processing skills, and practical experience with real world environmental data.', skills: ['Python', 'Data Analysis', 'Meteorological Data', 'Data Processing', 'Statistics', 'Research'] },
+        { period: 'Aug 2025 to Nov 2025', position: 'Data Scientist Intern', organization: 'BMKG, Stasiun Meteorologi Maritim Tanjung Perak Surabaya', description: 'Assisted in collecting, processing, and analyzing meteorological data to support daily weather observation and reporting activities. Worked with environmental datasets to identify trends, organize weather information, and contribute to operational reports used by the meteorological team. This internship strengthened analytical thinking, data processing skills, and practical experience with real world environmental data.', skills: ['Python', 'Data Analysis', 'Meteorological Data', 'Data Processing', 'Statistics', 'Research'] },
       ],
     },
     {
