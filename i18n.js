@@ -32,6 +32,11 @@
   };
 
   const englishProjects = {
+    'pasar-keputran-utara-data-reconciliation': {
+      title: 'Pasar Keputran Utara Market Data Reconciliation',
+      desc: 'Reconciled market data for Pasar Keputran Utara and used exploratory analysis to review data completeness and identify records requiring verification before the field survey.',
+      metric: 'Professional Experience · PT Pasar Surya (Perseroda)',
+    },
     'dashboard-tantangan-kerja-2022': {
       problem: 'Employment data across regions needs to be summarised into comparable groups so areas with relatively high employment challenges can be identified and explored.',
       dataset: '2022 data from 514 Indonesian cities and regencies. The analysis focuses on the Open Unemployment Rate (TPT) and Labour Force Participation Rate (TPAK), supported by poverty rate, years of schooling, HDI, and GRDP.',
@@ -79,6 +84,72 @@
   };
 
   const indonesianProjectMeta = {
+    'pasar-sukodono-survey-reconciliation': {
+      title: 'Dashboard Rekonsiliasi dan Survei Lapangan Pasar Sukodono',
+      desc: 'Membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan di Pasar Sukodono, serta menyoroti kecocokan, perbedaan, dan temuan yang perlu ditindaklanjuti.',
+      metric: 'Pengalaman Profesional · PT Pasar Surya (Perseroda)',
+      problem: 'Data pasar perlu diperiksa dengan membandingkannya terhadap pengamatan lapangan untuk menemukan informasi yang sesuai, perbedaan, dan catatan yang perlu ditindaklanjuti.',
+      dataset: 'Data pasar hasil rekonsiliasi dan hasil survei lapangan untuk stand di Pasar Sukodono, mencakup nama pedagang, luas stand, jenis jualan, dan status stand.',
+      method: 'Membandingkan catatan hasil rekonsiliasi dengan hasil survei lapangan, lalu merangkum kesesuaian, perbedaan, dan informasi yang belum tersedia dalam dashboard.',
+      process: 'Merekonsiliasi data pasar → membandingkan dengan survei lapangan → meninjau kecocokan dan perbedaan → merangkum temuan survei dalam dashboard.',
+      result: 'Menyusun dashboard perbandingan data hasil rekonsiliasi dengan temuan lapangan serta mencatat hal-hal yang perlu diverifikasi dan ditindaklanjuti.',
+      tech: 'Google Sheets, rekonsiliasi data, pelaporan dashboard',
+      challenge: 'Menghubungkan catatan dalam dataset dengan pengamatan di lokasi ketika beberapa stand atau detail belum dapat diverifikasi saat survei.',
+      lesson: 'Perbandingan data sumber dengan pengamatan lapangan membantu memperjelas kesenjangan data dan temuan operasional yang perlu ditindaklanjuti.',
+      role: 'Magang Riset dan Pengembangan',
+      caseFacts: [['LOKASI', 'Pasar Sukodono', 'Survei lapangan'], ['CAKUPAN', 'Data stand', 'Data rekonsiliasi vs. survei'], ['HASIL', 'Dashboard perbandingan', 'Temuan untuk tindak lanjut']],
+      visualAlt: 'Dashboard Pasar Sukodono yang membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan',
+      visualCaption: 'Ringkasan dashboard mengenai kesesuaian data, status stand, dan temuan survei lapangan Pasar Sukodono.',
+    },
+    'pasar-kalianyar-survey-reconciliation': {
+      title: 'Dashboard Rekonsiliasi dan Survei Lapangan Pasar Kalianyar',
+      desc: 'Membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan di Pasar Kalianyar, serta menyoroti kecocokan, perbedaan, dan temuan yang perlu ditindaklanjuti.',
+      metric: 'Pengalaman Profesional · PT Pasar Surya (Perseroda)',
+      problem: 'Data pasar perlu diperiksa dengan membandingkannya terhadap pengamatan lapangan untuk menemukan informasi yang sesuai, perbedaan, dan catatan yang perlu ditindaklanjuti.',
+      dataset: 'Data pasar hasil rekonsiliasi dan hasil survei lapangan untuk stand di Pasar Kalianyar, mencakup nama pedagang, luas stand, jenis jualan, dan status stand.',
+      method: 'Membandingkan catatan hasil rekonsiliasi dengan hasil survei lapangan, lalu merangkum kesesuaian, perbedaan, dan informasi yang belum tersedia dalam dashboard.',
+      process: 'Merekonsiliasi data pasar → membandingkan dengan survei lapangan → meninjau kecocokan dan perbedaan → merangkum temuan survei dalam dashboard.',
+      result: 'Menyusun dashboard perbandingan data hasil rekonsiliasi dengan temuan lapangan serta mencatat hal-hal yang perlu diverifikasi dan ditindaklanjuti.',
+      tech: 'Google Sheets, rekonsiliasi data, pelaporan dashboard',
+      challenge: 'Menghubungkan catatan dalam dataset dengan pengamatan di lokasi ketika beberapa stand atau detail belum dapat diverifikasi saat survei.',
+      lesson: 'Perbandingan data sumber dengan pengamatan lapangan membantu memperjelas kesenjangan data dan temuan operasional yang perlu ditindaklanjuti.',
+      role: 'Magang Riset dan Pengembangan',
+      caseFacts: [['LOKASI', 'Pasar Kalianyar', 'Survei lapangan'], ['CAKUPAN', 'Data stand', 'Data rekonsiliasi vs. survei'], ['HASIL', 'Dashboard perbandingan', 'Temuan untuk tindak lanjut']],
+      visualAlt: 'Dashboard Pasar Kalianyar yang membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan',
+      visualCaption: 'Ringkasan dashboard mengenai kesesuaian data, status stand, dan temuan survei lapangan Pasar Kalianyar.',
+    },
+    'pasar-bibis-survey-reconciliation': {
+      title: 'Dashboard Rekonsiliasi dan Survei Lapangan Pasar Bibis',
+      desc: 'Membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan di Pasar Bibis, serta menyoroti kecocokan, perbedaan, dan temuan yang perlu ditindaklanjuti.',
+      metric: 'Pengalaman Profesional · PT Pasar Surya (Perseroda)',
+      problem: 'Data pasar perlu diperiksa dengan membandingkannya terhadap pengamatan lapangan untuk menemukan informasi yang sesuai, perbedaan, dan catatan yang perlu ditindaklanjuti.',
+      dataset: 'Data pasar hasil rekonsiliasi dan hasil survei lapangan untuk stand di Pasar Bibis, mencakup nama pedagang, luas stand, jenis jualan, dan status stand.',
+      method: 'Membandingkan catatan hasil rekonsiliasi dengan hasil survei lapangan, lalu merangkum kesesuaian, perbedaan, dan informasi yang belum tersedia dalam dashboard.',
+      process: 'Merekonsiliasi data pasar → membandingkan dengan survei lapangan → meninjau kecocokan dan perbedaan → merangkum temuan survei dalam dashboard.',
+      result: 'Menyusun dashboard perbandingan data hasil rekonsiliasi dengan temuan lapangan serta mencatat hal-hal yang perlu diverifikasi dan ditindaklanjuti.',
+      tech: 'Google Sheets, rekonsiliasi data, pelaporan dashboard',
+      challenge: 'Menghubungkan catatan dalam dataset dengan pengamatan di lokasi ketika beberapa stand atau detail belum dapat diverifikasi saat survei.',
+      lesson: 'Perbandingan data sumber dengan pengamatan lapangan membantu memperjelas kesenjangan data dan temuan operasional yang perlu ditindaklanjuti.',
+      role: 'Magang Riset dan Pengembangan',
+      caseFacts: [['LOKASI', 'Pasar Bibis', 'Survei lapangan'], ['CAKUPAN', 'Data stand', 'Data rekonsiliasi vs. survei'], ['HASIL', 'Dashboard perbandingan', 'Temuan untuk tindak lanjut']],
+      visualAlt: 'Dashboard Pasar Bibis yang membandingkan data pasar hasil rekonsiliasi dengan hasil survei lapangan',
+      visualCaption: 'Ringkasan dashboard mengenai kesesuaian data, status stand, dan temuan survei lapangan Pasar Bibis.',
+    },
+    'pasar-keputran-utara-data-reconciliation': {
+      title: 'Rekonsiliasi Data Pasar Keputran Utara',
+      desc: 'Merekonsiliasi data Pasar Keputran Utara dan melakukan analisis eksploratif untuk meninjau kelengkapan data serta mengidentifikasi catatan yang perlu diverifikasi sebelum survei lapangan.',
+      metric: 'Pengalaman Profesional · PT Pasar Surya (Perseroda)',
+      problem: 'Catatan pasar dari beberapa sumber perlu diperiksa konsistensi dan kelengkapannya agar data yang memerlukan verifikasi dapat diketahui sebelum survei.',
+      dataset: 'Data Pasar Keputran Utara yang mencakup aktivitas, bentuk dan golongan stand, kondisi administrasi, serta status penegakan seperti yang ditampilkan pada ringkasan proyek.',
+      method: 'Excel dan Python digunakan untuk merekonsiliasi catatan dari berbagai sumber, memeriksa konsistensi data, serta melakukan analisis eksploratif (EDA) terhadap kelengkapan dan masalah yang perlu ditindaklanjuti.',
+      process: 'Menggabungkan catatan sumber → mencocokkan dan merekonsiliasi data → memeriksa kelengkapan dan kualitas data → merangkum temuan dalam grafik → mengidentifikasi informasi yang perlu diverifikasi sebelum survei.',
+      result: 'Menyiapkan ringkasan visual data pasar dan menyoroti kelengkapan serta kebutuhan verifikasi untuk mendukung persiapan survei.',
+      challenge: 'Menjaga konsistensi catatan dari berbagai sumber sekaligus membedakan informasi yang belum lengkap dari catatan yang perlu diverifikasi lebih lanjut.',
+      lesson: 'Rekonsiliasi data dan analisis eksploratif membantu menemukan ketidakkonsistenan serta informasi yang hilang sejak awal, sehingga tim survei memiliki dasar yang lebih jelas untuk verifikasi lapangan.',
+      caseFacts: [['LOKASI', 'Pasar Keputran Utara', 'Surabaya'], ['ALAT', 'Excel & Python', 'Rekonsiliasi dan EDA'], ['TUJUAN', 'Kelengkapan data', 'Persiapan verifikasi survei']],
+      visualAlt: 'Ringkasan dashboard EDA data Pasar Keputran Utara',
+      visualCaption: 'Ringkasan analisis eksploratif untuk meninjau kelengkapan data pasar dan mengidentifikasi informasi yang perlu diverifikasi sebelum survei.',
+    },
     'dashboard-tantangan-kerja-2022': { title: 'Dashboard Tantangan Ketenagakerjaan Indonesia 2022', desc: 'Dashboard Power BI yang memetakan tantangan ketenagakerjaan kota dan kabupaten di Indonesia melalui klasterisasi TPT dan TPAK.', metric: 'Proyek Akademik · Statistika Terapan', role: 'Analis Data & Pengembang Dashboard' },
     'quick-count-pilpres-2019': { title: 'Quick Count Pilpres 2019: Kalimantan Tengah', desc: 'Estimasi proporsi suara dengan random, cluster, dan multistage sampling pada data Pilpres Kalimantan Tengah 2019.', metric: 'Proyek Akademik · Statistika Terapan', role: 'Analis Data' },
     'online-game-web-scraping': { title: 'Analisis Game Online dengan Web Scraping', desc: 'Eksplorasi 100 game online untuk memahami pola pemain aktif, harga, serta hubungannya melalui visualisasi dan regresi linear.', metric: 'Proyek Akademik · Pengolahan Data', role: 'Analis Data' },
@@ -224,6 +295,7 @@
 
   const indonesianExperience = [
     { section: 'Pengalaman Profesional', items: [
+      { period: 'Sep 2026 sampai sekarang', position: 'Magang Riset dan Pengembangan', organization: 'PT Pasar Surya (Perseroda)', description: 'Terpilih mengikuti program magang MagangHub dari Kementerian Ketenagakerjaan Republik Indonesia (Kemnaker RI) di PT Pasar Surya (Perseroda). Melakukan rekonsiliasi data dari berbagai sumber untuk mengidentifikasi perbedaan, memvalidasi catatan, dan menjaga konsistensi data antara unit pemasaran dan unit pasar. Membersihkan, menggabungkan, dan menyusun data pasar menggunakan Google Sheets dengan teknik pencocokan data, lookup, query, dan validasi. Melakukan exploratory data analysis (EDA) untuk mengidentifikasi nilai yang hilang, anomali, pola, serta masalah kualitas data guna mendukung analisis dan pelaporan lebih lanjut.', skills: ['Rekonsiliasi Data', 'Pembersihan Data', 'Google Sheets', 'Validasi Data', 'Analisis Data Eksploratif', 'Kualitas Data'] },
       { period: 'Jan 2025 sampai Mei 2025', position: 'Magang Data Analyst', organization: 'PT PAL Indonesia', description: 'Mengembangkan dashboard monitoring yang mendekati waktu nyata untuk memvisualisasikan performa mesin dan data operasional menggunakan Grafana serta Apache ECharts. Berkolaborasi dengan engineer untuk menganalisis data produksi ECW Crane, mesin Fanuc, dan kompresor Ingersoll Rand, lalu mengubah informasi operasional mentah menjadi dashboard interaktif. Pekerjaan ini meningkatkan aksesibilitas data dan membantu engineer memantau performa peralatan secara lebih efisien.', skills: ['Grafana', 'Apache ECharts', 'Pengembangan Dashboard', 'Analisis Data Industri', 'Visualisasi Data', 'SQL'] },
       { period: 'Agu 2025 sampai Nov 2025', position: 'Magang Data Science', organization: 'BMKG, Stasiun Meteorologi Maritim Tanjung Perak Surabaya', description: 'Membantu pengumpulan, pemrosesan, dan analisis data meteorologi untuk mendukung kegiatan observasi serta pelaporan cuaca harian. Mengolah dataset lingkungan untuk mengidentifikasi tren, menata informasi cuaca, dan berkontribusi pada laporan operasional tim meteorologi. Magang ini memperkuat kemampuan berpikir analitis, pemrosesan data, serta pengalaman bekerja dengan data lingkungan dunia nyata.', skills: ['Python', 'Analisis Data', 'Data Meteorologi', 'Pemrosesan Data', 'Statistika', 'Riset'] },
     ] },
@@ -282,6 +354,28 @@
     // subsequent scripts but is not exposed as `window.portfolio`.
     if (typeof portfolio === 'undefined') return;
     const translations = language() === 'en' ? englishProjects : indonesianProjectMeta;
+    if (language() === 'id') {
+      const surveyTranslation = (market) => ({
+        title: `Dashboard Survei Lapangan ${market}`,
+        desc: `Merangkum hasil survei lapangan ${market}, termasuk kondisi stand dan temuan utama untuk ditindaklanjuti.`,
+        metric: 'Pengalaman Profesional · PT Pasar Surya (Perseroda)',
+        problem: `Temuan survei perlu disusun menjadi ringkasan yang jelas mengenai kondisi stand dan pengamatan utama di ${market}.`,
+        dataset: `Hasil survei lapangan stand di ${market}, mencakup nama pedagang, luas stand, jenis jualan, status stand, dan catatan survei.`,
+        method: 'Merangkum hasil survei lapangan dalam dashboard yang menampilkan data stand, kondisi yang diamati, dan temuan utama.',
+        process: 'Meninjau hasil survei → menyusun informasi stand → merangkum kondisi dan temuan → menyajikan hasil dalam dashboard.',
+        result: `Menyusun dashboard hasil survei lapangan ${market} dan mendokumentasikan temuan untuk ditindaklanjuti.`,
+        tech: 'Data survei pasar, pelaporan dashboard',
+        challenge: 'Menyajikan informasi stand dan pengamatan lapangan dengan jelas agar temuan mudah ditinjau dan ditindaklanjuti.',
+        lesson: 'Dashboard survei yang terstruktur membantu menyampaikan kondisi pasar dan temuan lapangan agar lebih mudah ditinjau.',
+        role: 'Magang Riset dan Pengembangan',
+        caseFacts: [['LOKASI', market, 'Survei lapangan'], ['CAKUPAN', 'Kondisi stand', 'Pengamatan survei'], ['HASIL', 'Dashboard survei', 'Temuan untuk tindak lanjut']],
+        visualAlt: `Dashboard hasil survei lapangan ${market}`,
+        visualCaption: `Ringkasan dashboard mengenai kondisi stand dan temuan survei lapangan ${market}.`,
+      });
+      Object.assign(translations['pasar-sukodono-survey-reconciliation'], surveyTranslation('Pasar Sukodono'));
+      Object.assign(translations['pasar-kalianyar-survey-reconciliation'], surveyTranslation('Pasar Kalianyar'));
+      Object.assign(translations['pasar-bibis-survey-reconciliation'], surveyTranslation('Pasar Bibis'));
+    }
     portfolio.projects.forEach((project) => Object.assign(project, translations[project.id] || {}));
     if (language() === 'id') {
       Object.assign(portfolio.profile, indonesianProfile);
